@@ -22,6 +22,8 @@
 
 鸣谢[okxlin/appstore](https://github.com/okxlin/appstore)开启了第三方应用商店的先河。
 
+本仓库由极光星运维和管理，感谢[木创社](https://takagi3.top)的协助和部署测试环境提供。
+
 ## 2. 使用方式
 
 默认`1Panel`安装在`/opt/`路径下，如果不是按需修改以下。
