@@ -34,7 +34,7 @@
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 ```shell
-git clone -b main https://mirror.ghproxy.com/https://github.com/AuroraStarTeam/1panel-app-store /opt/1panel/resource/apps/local/aurora-appstore
+git clone -b dev https://mirror.ghproxy.com/https://github.com/AuroraStarTeam/1panel-app-store /opt/1panel/resource/apps/local/aurora-appstore
 
 cp -rf /opt/1panel/resource/apps/local/aurora-appstore/apps/* /opt/1panel/resource/apps/local/
 
@@ -47,15 +47,15 @@ rm -rf /opt/1panel/resource/apps/local/aurora-appstore
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 ```shell
-wget -P /opt/1panel/resource/apps/local https://mirror.ghproxy.com/https://github.com/AuroraStarTeam/1panel-app-store/archive/refs/heads/main.zip
+wget -P /opt/1panel/resource/apps/local https://mirror.ghproxy.com/https://github.com/AuroraStarTeam/1panel-app-store/archive/refs/heads/dev.zip
 
-unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/main.zip
+unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/dev.zip
 
 cp -rf /opt/1panel/resource/apps/local/aurora-appstore/apps/* /opt/1panel/resource/apps/local/
 
 rm -rf /opt/1panel/resource/apps/local/aurora-appstore
 
-rm -rf /opt/1panel/resource/apps/local/main.zip
+rm -rf /opt/1panel/resource/apps/local/dev.zip
 ```
 
 然后应用商店刷新本地应用即可。
@@ -66,7 +66,7 @@ rm -rf /opt/1panel/resource/apps/local/main.zip
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 ```shell
-git clone -b main https://github.com/AuroraStarTeam/1panel-app-store /opt/1panel/resource/apps/local/aurora-appstore
+git clone -b dev https://github.com/AuroraStarTeam/1panel-app-store /opt/1panel/resource/apps/local/aurora-appstore
 
 cp -rf /opt/1panel/resource/apps/local/aurora-appstore/apps/* /opt/1panel/resource/apps/local/
 
@@ -79,15 +79,15 @@ rm -rf /opt/1panel/resource/apps/local/aurora-appstore
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 ```shell
-wget -P /opt/1panel/resource/apps/local https://github.com/AuroraStarTeam/1panel-app-store/archive/refs/heads/main.zip
+wget -P /opt/1panel/resource/apps/local https://github.com/AuroraStarTeam/1panel-app-store/archive/refs/heads/dev.zip
 
-unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/main.zip
+unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/dev.zip
 
 cp -rf /opt/1panel/resource/apps/local/aurora-appstore/apps/* /opt/1panel/resource/apps/local/
 
 rm -rf /opt/1panel/resource/apps/local/aurora-appstore
 
-rm -rf /opt/1panel/resource/apps/local/main.zip
+rm -rf /opt/1panel/resource/apps/local/dev.zip
 ```
 
 然后应用商店刷新本地应用即可。
