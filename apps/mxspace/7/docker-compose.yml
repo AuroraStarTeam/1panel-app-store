@@ -1,0 +1,55 @@
+services:
+  app:
+    container_name: mx-server
+    image: innei/mx-server:7
+    environment:
+      - TZ=${TIME_ZONE}
+      - NODE_ENV=production
+      - DB_HOST=mx-db
+      - REDIS_HOST=mx-redis
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS}
+      - JWT_SECRET=${JWT_SECRET}
+    volumes:
+      - ./data/mx-space:/root/.mx-space
+    ports:
+      - '${PANEL_APP_PORT_HTTP}:2333'
+    depends_on:
+      - mongo
+      - redis
+    networks:
+      - 1panel-network
+    restart: unless-stopped
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://127.0.0.1:2333/api/v2/ping']
+      interval: 1m30s
+      timeout: 30s
+      retries: 5
+      start_period: 30s
+
+  mx-db:
+    container_name: mx-db
+    image: mongo
+    volumes:
+      - ./data/db:/data/db
+    networks:
+      - 1panel-network
+    restart: unless-stopped
+
+  mx-redis:
+    image: redis:alpine
+    container_name: mx-redis
+    volumes:
+      - ./data/redis:/data
+    healthcheck:
+      test: ['CMD-SHELL', 'redis-cli ping | grep PONG']
+      start_period: 20s
+      interval: 30s
+      retries: 5
+      timeout: 3s
+    networks:
+      - 1panel-network
+    restart: unless-stopped
+
+networks:
+  1panel-network:
+    external: true

@@ -1,0 +1,33 @@
+additionalProperties:
+  formFields:
+    - default: 2333
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: example.com
+      edit: true
+      envKey: ALLOWED_ORIGINS
+      labelEn: Allowed domain (multiple delimited with ",")
+      labelZh: 被允许的域名 (不需要带Http协议头，多个使用英文逗号分割)
+      required: true
+      type: text
+    - default: Np2qggtiUays857a
+      edit: true
+      envKey: JWT_SECRET
+      labelEn: JWT key (16 to 32 characters)
+      labelZh: JWT 密钥 (16 到 32 位字符,请自行核验唯一性！)
+      random: true
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
