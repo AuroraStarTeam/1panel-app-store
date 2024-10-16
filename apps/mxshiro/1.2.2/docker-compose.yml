@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  shiro:
+    container_name: shiro
+    image: innei/shiro:1.2.2
+    restart: always
+    environment:
+      - NEXT_SHARP_PATH=/usr/local/lib/node_modules/sharp
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+      - NEXT_PUBLIC_GATEWAY_URL=${NEXT_PUBLIC_GATEWAY_URL}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:2323
+    networks:
+      - 1panel-network
+
+networks:
+  1panel-network:
+    external: true

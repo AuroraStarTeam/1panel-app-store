@@ -1,0 +1,19 @@
+name: MixSpace Shiro
+tags:
+  - 建站
+title: MixSpace前端主题Shiro
+type: 建站
+description: MixSpace前端主题Shiro
+additionalProperties:
+    key: mxshiro
+    name: MxShiro
+    tags:
+      - WebSite
+    shortDescZh: MixSpace前端主题Shiro
+    shortDescEn: MixSpace front-end theme Shiro
+    type: website
+    crossVersionUpdate: true
+    limit: 0
+    website: https://mx-space.js.org
+    github: https://github.com/Innei/Shiro
+    document: https://mx-space.js.org/themes/shiro
