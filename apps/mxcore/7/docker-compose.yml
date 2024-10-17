@@ -14,8 +14,8 @@ services:
     ports:
       - '${PANEL_APP_PORT_HTTP}:2333'
     depends_on:
-      - mongo
-      - redis
+      - mx-db
+      - mx-redis
     networks:
       - 1panel-network
     restart: unless-stopped
