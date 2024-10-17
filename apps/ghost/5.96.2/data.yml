@@ -15,7 +15,7 @@ additionalProperties:
             - label: MySQL
               value: mysql
             - label: MariaDB
-              value: mysql
+              value: mariadb
         - default: ghost
           envKey: PANEL_DB_NAME
           labelEn: Database
