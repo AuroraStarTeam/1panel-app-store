@@ -23,7 +23,7 @@ additionalProperties:
       random: true
       required: true
       rule: paramComplexity
-      type: select
+      type: password
     - default: Asia/Shanghai
       edit: true
       envKey: TZ
