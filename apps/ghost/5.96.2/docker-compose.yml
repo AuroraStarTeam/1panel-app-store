@@ -16,7 +16,7 @@ services:
       - database__connection__database=${PANEL_DB_NAME}
       - database__connection__port=${PANEL_DB_PORT}
       - url=${GHOST_EXTERNAL_URL}
-    image: ghost:latest
+    image: ghost:5.96.2
     labels:
       createdBy: "Apps"
 networks:
