@@ -26,3 +26,7 @@
 前往：https://mx-space.js.org/themes/shiro
 
 感谢 @wibus-wee 和 @wuhang2003 等其他社区贡献者编写。
+
+## 速评
+
+社区版MixSpace前端主题Shiro，轻盈似纸，简洁快速。

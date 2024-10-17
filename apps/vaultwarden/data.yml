@@ -1,0 +1,19 @@
+name: Vaultwarden
+tags:
+  - 工具
+title: Rust驱动的自托管密码管理器
+type: 工具
+description: Rust驱动的自托管密码管理器
+additionalProperties:
+    key: vaultwarden
+    name: Vaultwarden
+    tags:
+      - Tool
+    shortDescZh: Rust驱动的自托管密码管理器
+    shortDescEn: Rust-powered self-hosted password manager
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    website: https://github.com/dani-garcia/vaultwarden
+    github: https://github.com/dani-garcia/vaultwarden
+    document: https://github.com/dani-garcia/vaultwarden/wiki

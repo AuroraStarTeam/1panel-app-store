@@ -1,0 +1,25 @@
+version: '3'
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: always
+    environment:
+      - TZ=${TZ}
+      - SIGNUPS_ALLOWED=${SIGNUPS_ALLOWED}
+      - INVITATIONS_ALLOWED=${INVITATIONS_ALLOWED}
+      - ADMIN_TOKEN=${ADMIN_TOKEN}
+      - LOG_FILE=/data/vaultwarden.log
+      - LOG_LEVEL=warn
+      - SHOW_PASSWORD_HINT=${SHOW_PASSWORD_HINT}
+      - DOMAIN=${DOMAIN}
+    volumes:
+      - ./vw_data:/data
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:80
+    networks:
+      - 1panel-network
+
+networks:
+  1panel-network:
+    external: true

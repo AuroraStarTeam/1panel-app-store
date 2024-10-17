@@ -1,0 +1,66 @@
+additionalProperties:
+  formFields:
+    - default: 8082
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: https://example.com
+      edit: true
+      envKey: DOMAIN
+      labelEn: Vaultwarnen Domain
+      labelZh: Vaultwarden前端域名
+      required: true
+      type: text
+    - default: A1QLM6wSgcKsE7ExHFmipMNDkNfnoGmEjSSo9rzmhSJbRUeUk6XwgUVCdWb9UNxA
+      edit: true
+      envKey: ADMIN_TOKEN
+      labelEn: ADMIN TOKEN
+      labelZh: 开启 Admin 管理页面的保护Token
+      random: true
+      required: true
+      rule: paramComplexity
+      type: select
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TZ
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text
+    - default: "false"
+      envKey: SIGNUPS_ALLOWED
+      labelEn: SIGNUPS ALLOWED
+      labelZh: 是否允许用户注册
+      required: true
+      type: select
+      values:
+          - label: 允许
+            value: "true"
+          - label: 不允许
+            value: "false"
+    - default: "true"
+      envKey: INVITATIONS_ALLOWED
+      labelEn: INVITATIONS ALLOWED
+      labelZh: 是否允许邀请用户
+      required: true
+      type: select
+      values:
+          - label: 允许
+            value: "true"
+          - label: 不允许
+            value: "false"
+    - default: "false"
+      envKey: SHOW_PASSWORD_HINT
+      labelEn: SHOW PASSWORD HINT
+      labelZh: 是否开启密码提示
+      required: true
+      type: select
+      values:
+          - label: 允许
+            value: "true"
+          - label: 不允许
+            value: "false"
