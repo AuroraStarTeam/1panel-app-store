@@ -34,7 +34,7 @@
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 ```shell
-git clone -b dev https://ghp.ci//https://github.com/AuroraStarTeam/1panel-app-store /opt/1panel/resource/apps/local/aurora-appstore
+git clone -b dev https://ghp.ci/https://github.com/AuroraStarTeam/1panel-app-store /opt/1panel/resource/apps/local/aurora-appstore
 
 cp -rf /opt/1panel/resource/apps/local/aurora-appstore/apps/* /opt/1panel/resource/apps/local/
 
@@ -47,7 +47,7 @@ rm -rf /opt/1panel/resource/apps/local/aurora-appstore
 
 `1Panel`计划任务类型`Shell 脚本`的计划任务框里，添加并执行以下命令，或者终端运行以下命令，
 ```shell
-wget -P /opt/1panel/resource/apps/local https://ghp.ci//https://github.com/AuroraStarTeam/1panel-app-store/archive/refs/heads/dev.zip
+wget -P /opt/1panel/resource/apps/local https://ghp.ci/https://github.com/AuroraStarTeam/1panel-app-store/archive/refs/heads/dev.zip
 
 unzip -o -d /opt/1panel/resource/apps/local/ /opt/1panel/resource/apps/local/dev.zip
 
