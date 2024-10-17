@@ -60,7 +60,7 @@ additionalProperties:
       required: true
       type: select
       values:
-          - label: 允许
+          - label: 开启
             value: "true"
-          - label: 不允许
+          - label: 不开启
             value: "false"
