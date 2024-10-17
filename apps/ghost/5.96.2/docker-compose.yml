@@ -9,7 +9,7 @@ services:
     volumes:
       - ./data:/var/lib/ghost/content
     environment:
-      - database__client=${PANEL_DB_TYPE}
+      - database__client=mysql
       - database__connection__host=${PANEL_DB_HOST}
       - database__connection__user=${PANEL_DB_USER}
       - database__connection__password=${PANEL_DB_USER_PASSWORD}
