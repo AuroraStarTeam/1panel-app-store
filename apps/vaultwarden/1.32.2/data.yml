@@ -31,7 +31,7 @@ additionalProperties:
       labelZh: 时区
       required: true
       type: text
-    - default: "false"
+    - default: "true"
       envKey: SIGNUPS_ALLOWED
       labelEn: SIGNUPS ALLOWED
       labelZh: 是否允许用户注册
