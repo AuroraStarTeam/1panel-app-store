@@ -1,5 +1,5 @@
 services:
-  flarum:
+  ghost:
     container_name: ${CONTAINER_NAME}
     restart: always
     networks:

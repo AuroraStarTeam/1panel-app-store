@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: mx-server
+    container_name: ${CONTAINER_NAME}
     image: innei/mx-server:7
     environment:
       - TZ=${TIME_ZONE}

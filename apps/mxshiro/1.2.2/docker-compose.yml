@@ -1,8 +1,8 @@
 services:
   shiro:
-    container_name: shiro
+    container_name: ${CONTAINER_NAME}
     image: innei/shiro:1.2.2
-    restart: always
+    restart: unless-stopped
     environment:
       - NEXT_SHARP_PATH=/usr/local/lib/node_modules/sharp
       - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
