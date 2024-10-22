@@ -1,0 +1,17 @@
+services:
+  kami:
+    container_name: ${CONTAINER_NAME}
+    image: innei/mx-kami:latest
+    restart: unless-stopped
+    environment:
+      - NEXT_PUBLIC_SNIPPET_NAME=kami
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
+      - NEXT_PUBLIC_GATEWAY_URL=${NEXT_PUBLIC_GATEWAY_URL}
+    ports:
+      - ${PANEL_APP_PORT_HTTP}:2323
+    networks:
+      - 1panel-network
+
+networks:
+  1panel-network:
+    external: true

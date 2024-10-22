@@ -1,0 +1,24 @@
+additionalProperties:
+  formFields:
+    - default: 2323
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: https://mx.example.com/api/v2
+      edit: true
+      envKey: NEXT_PUBLIC_API_URL
+      labelEn: Backend API address
+      labelZh: 后端API地址
+      required: true
+      type: text
+    - default: https://mx.example.com
+      edit: true
+      envKey: NEXT_PUBLIC_GATEWAY_URL
+      labelEn: Backend gateway address
+      labelZh: 后端网关地址
+      required: true
+      type: text
